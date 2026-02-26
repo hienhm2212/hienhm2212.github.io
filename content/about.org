@@ -1,0 +1,50 @@
+#+TITLE: About Me
+#+DATE: <2026-01-07 Wed>
+#+OPTIONS: toc:nil
+* Hello! 👋
+
+#+ATTR_HTML: :class avatar :alt "Avatar"
+[[file:assets/avatar.jpg]]
+
+I'm a developer who loves building things with code and writing about technology.
+
+* What I Do
+
+- Software development
+- Writing technical blog posts
+- Learning new technologies
+- Contributing to open source
+
+* Tech Stack
+
+I work with various technologies including:
+
+- *Programming Languages:* Ruby on Rails, Golang, Emacs Lisp
+- *Tools:* Emacs, Git, Linux
+- *Interests:* Web development, automation, productivity
+
+* This Blog
+
+This blog is built with:
+
+- *Org-mode* for writing
+- *org-publish* for static site generation
+- *Catppuccin Mocha* theme for styling
+
+All content is written in Org-mode and published as static HTML.
+
+* Contact
+
+Feel free to reach out:
+
+- Email: blackcat22121996@gmail.com
+- GitHub: [[https://github.com/hienhm2212][github.com/hienhm2212]]
+
+* Colophon
+
+This website is:
+- Written in Org-mode
+- Generated with org-publish
+- Styled with Catppuccin Mocha theme
+- Hosted on [your hosting platform]
+- Source code available on [[https://github.com/hienhm2212/my-blog][GitHub]]

@@ -1,0 +1,4 @@
+#+TITLE: My Blog
+
+- [[file:posts/code-journey.org][My Coding Journey]] - 2026-01-06
+- [[file:posts/hello-world.org][Hello World]] - 2026-01-06

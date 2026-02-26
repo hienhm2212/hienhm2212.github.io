@@ -1,0 +1,15 @@
+#+TITLE: My Coding Journey
+#+DATE: <2026-01-06 Tue>
+#+AUTHOR: Hien Huynh-Minh
+
+Welcome back! This is another page on my blog, written in Org-mode with Catppuccin style.
+
+* Why I Love Coding
+
+Coding /empowers/ me to /create/, /solve problems/, and turn ideas into reality.
+
+#+BEGIN_SRC ruby
+def greet
+  puts "Keep coding and stay curious!"
+end
+#+END_SRC

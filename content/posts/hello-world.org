@@ -1,0 +1,14 @@
+#+TITLE: Hello World
+#+DATE: <2026-01-06 Tue>
+#+AUTHOR: Hien Huynh-Minh
+
+Welcome to my blog! This is my first post using Org-mode and Catppuccin colors.
+
+* This is a heading
+
+Some text with *bold* and /italic/ formatting.
+
+#+BEGIN_SRC python
+def hello():
+    print("Hello, Catppuccin!")
+#+END_SRC
