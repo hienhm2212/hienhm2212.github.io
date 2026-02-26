@@ -6,7 +6,15 @@ No Hugo, no Jekyll, no JavaScript framework. Just Emacs, Org-mode, and a shell s
 
 * Why Not Just Use Hugo or Jekyll?
 
-[Your reasoning — wanted to stay in Emacs? Learn org-publish? Keep it simple?]
+While Hugo and Jekyll are excellent, they introduced a "context switch" I wanted to avoid.
+I didn't want to leave my editor to preview a site or learn a specific templating engine like Go Templates or Liquid.
+By using org-publish, my blog isn't just about my notes—it is my notes. I wanted a system that was:
+
+1. Portable: No dependencies other than Emacs.
+
+2. Simple: A single Lisp file controls the entire build.
+
+3. Future-proof: As long as Emacs exists, my blog can be compiled.
 
 * What is org-publish?
 
@@ -18,9 +26,9 @@ The core idea:
 #+BEGIN_SRC emacs-lisp
 (setq org-publish-project-alist
       '(("my-blog"
-         :base-directory "./content/"
-         :publishing-directory "./public/"
-         :publishing-function org-html-publish-to-html)))
+	 :base-directory "./content/"
+	 :publishing-directory "./public/"
+	 :publishing-function org-html-publish-to-html)))
 #+END_SRC
 
 * The Project Structure
@@ -38,9 +46,10 @@ my-blog/
 
 * Challenges I Ran Into
 
-- [Challenge 1 — e.g. about.org not being published]
-- [Challenge 2 — e.g. avatar not showing]
-- [Challenge 3 — e.g. build.sh not triggering publish]
+- The CSS "Specificity" War: Since I don't write the HTML tags myself, I had to learn how Org-mode
+structures its output. It uses specific classes like .outline-2, .title, and #postamble. My first
+attempt at CSS looked broken because I wasn't targeting the IDs and classes Emacs generates by default.
+I eventually had to use M-x xwidget-webkit-browse-url just to inspect the elements and see why my padding was off!
 
 * Deploying with GitHub Actions
 
@@ -51,10 +60,6 @@ The whole blog builds on GitHub's servers with one workflow:
 3. Deploy =public/= to GitHub Pages
 
 Total cost: $0.
-
-* What I'd Do Differently
-
-[Any regrets or things you'd change about the setup?]
 
 * Resources
 
