@@ -23,6 +23,11 @@ jobs:
       - name: Build
         run: bash build.sh
 
+      - name: Check output
+        run: |
+          find public/ -type f | sort
+          test -f public/index.html || (echo "ERROR: public/index.html not found!" && exit 1)
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

@@ -1,0 +1,59 @@
+#+TITLE: Why I Use Emacs in 2026
+#+DATE: <2026-02-26 Thu>
+#+AUTHOR: Hien Huynh-Minh
+
+Everyone has an opinion about editors. Here's mine.
+
+* How It Started
+
+I started with Atom, VSCode, SublimeText, .... Emacs wasn't even on my radar until
+i saw my mentor used it. It so cool, like hacker, he didn't need a mouse.
+
+* The Learning Curve Is Real
+
+I won't lie — the first week was painful.
+
+[Describe a specific struggle: keybindings, config, terminology?]
+First, I don't understand about the config, then I must remember 
+the keybindings. It's hard 
+
+But unlike other tools, every hour I put into Emacs felt like
+an investment rather than a cost.
+
+* What Keeps Me Here
+
+The things I can't give up now:
+
+- *Org-mode* — I have learned it, then use for tasks, notes, literate code, presentation, etc.
+- Emacs can do every the system does (File management, Music, Email, Web, ...)
+- *Everything is hackable* — You can customize everything you want. 
+
+* My Setup for [Go/Rails/etc.]
+
+#+BEGIN_SRC emacs-lisp
+;; The packages I actually use day-to-day
+(use-package go-mode
+  :ensure t
+  :mode "\\.go\\'"
+  :custom
+  (go-ts-mode-indent-offset 4)
+  :bind (:map go-mode-map
+              ("C-c C-d" . godoc-at-point)
+              ("C-c C-a" . go-import-add)
+              ("C-c C-r" . go-remove-unused-imports))
+  :hook
+  ((go-mode go-ts-mode) . (lambda ()
+                            (setq-local indent-tabs-mode t)
+                            (setq-local tab-width 4)
+                            (add-hook 'before-save-hook #'my-go-before-save -10 t))))
+
+#+END_SRC
+
+* The Honest Downsides
+
+Emacs is not perfect. [Startup time? Complexity? Hard to onboard teammates?]
+
+* Should You Learn It?
+
+Yes, if you want to look cool, write 
+[Your honest recommendation — who is it for?]

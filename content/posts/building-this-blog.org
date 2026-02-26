@@ -1,0 +1,62 @@
+#+TITLE: How I Built This Blog with Org-mode
+#+DATE: <2026-02-26 Thu>
+#+AUTHOR: Hien Huynh-Minh
+
+No Hugo, no Jekyll, no JavaScript framework. Just Emacs, Org-mode, and a shell script.
+
+* Why Not Just Use Hugo or Jekyll?
+
+[Your reasoning — wanted to stay in Emacs? Learn org-publish? Keep it simple?]
+
+* What is org-publish?
+
+=org-publish= is a built-in Emacs package that converts Org-mode files to HTML.
+The entire blog is driven by a single =publish.el= config file.
+
+The core idea:
+
+#+BEGIN_SRC emacs-lisp
+(setq org-publish-project-alist
+      '(("my-blog"
+         :base-directory "./content/"
+         :publishing-directory "./public/"
+         :publishing-function org-html-publish-to-html)))
+#+END_SRC
+
+* The Project Structure
+
+#+BEGIN_SRC
+my-blog/
+├── content/          ← where I write
+│   ├── posts/        ← blog posts
+│   ├── assets/       ← CSS, images
+│   └── about.org
+├── publish.el        ← the entire build config
+├── build.sh          ← one-line build script
+└── public/           ← generated output (git-ignored)
+#+END_SRC
+
+* Challenges I Ran Into
+
+- [Challenge 1 — e.g. about.org not being published]
+- [Challenge 2 — e.g. avatar not showing]
+- [Challenge 3 — e.g. build.sh not triggering publish]
+
+* Deploying with GitHub Actions
+
+The whole blog builds on GitHub's servers with one workflow:
+
+1. Install Emacs
+2. Run =bash build.sh=
+3. Deploy =public/= to GitHub Pages
+
+Total cost: $0.
+
+* What I'd Do Differently
+
+[Any regrets or things you'd change about the setup?]
+
+* Resources
+
+- [[https://systemcrafters.net][System Crafters]] — where I learned this approach
+- [[https://orgmode.org/manual/Publishing.html][Org-mode Publishing Manual]]

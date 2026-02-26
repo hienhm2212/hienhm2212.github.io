@@ -114,4 +114,8 @@
   (org-publish-project "website" t))
 
 ;; Actually trigger publishing when run as a script
-(org-publish-project "website" t)
+(condition-case err
+    (org-publish-project "website" t)
+  (error
+   (message "Publishing failed: %s" (error-message-string err))
+   (kill-emacs 1)))
