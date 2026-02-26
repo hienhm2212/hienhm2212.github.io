@@ -7,7 +7,7 @@ Everyone has an opinion about editors. Here's mine.
 * How It Started
 
 I followed the typical path: Atom, VS Code, and Sublime Text. Emacs wasn't even on my radar
-util I saw my mentor using it. Watching them navigate complex files without ever touching a
+until I saw my mentor using it. Watching them navigate complex files without ever touching a
 mouse looked like magic - it was the first time I saw someone truly "speak" to their computer.
 
 * The Learning Curve Is Real
