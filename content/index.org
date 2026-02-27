@@ -1,5 +1,6 @@
 #+TITLE: My Blog
 
+- [[file:posts/goodbye-dat.org][Goodbye, Dat]] - 2026-02-27
 - [[file:posts/why-i-use-emacs.org][Why I Use Emacs in 2026]] - 2026-02-26
 - [[file:posts/building-this-blog.org][How I Built This Blog with Org-mode]] - 2026-02-26
 - [[file:posts/code-journey.org][My Coding Journey]] - 2026-01-06

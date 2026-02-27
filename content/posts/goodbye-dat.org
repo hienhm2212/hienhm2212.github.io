@@ -1,0 +1,43 @@
+#+TITLE: Goodbye, Dat
+#+DATE: <2026-02-27 Fri>
+#+AUTHOR: Hien Huynh-Minh
+
+Today, one of my closest teammates left the company. His name is Dat.
+
+[[file:../assets/datpt-1.jpg]]
+
+* Four Years
+
+Four years is a long time in tech. Long enough to survive bad sprints, late-night deploys,
+and product pivots that made no sense at the time. Long enough that you stop being just
+coworkers and start being something more — teammates, friends, something close to brothers.
+
+Dat was all of that.
+
+* What Made Him Different
+
+He was sharp. The kind of engineer who didn't just solve the problem in front of him —
+he understood /why/ it was a problem in the first place. Working alongside him made me
+a better engineer, not because he ever said "do it this way," but because watching him
+think raised the bar quietly, consistently.
+
+[[file:../assets/datpt-2.jpg]]
+
+He helped me a lot — more than I probably told him. And outside of work, he was the
+guy you wanted on your team in a game just as much as in a codebase. Funny, competitive,
+always good energy.
+
+* On People Leaving
+
+Leaving isn't the same as disappearing. The best people outgrow places — that's not a
+failure of the place or the person, it's just how growth works. Dat moving on means
+he found something worth chasing. That's worth celebrating.
+
+[[file:../assets/datpt-3.png]]
+* To Dat
+
+Wherever you land next, you'll make that team better. You always do.
+
+Thanks for the four years. Go build something great.
+
+[[file:../assets/datpt-4.png]]
